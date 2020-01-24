@@ -64,13 +64,13 @@ const styles = StyleSheet.create({
   loginButton: {
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#6BB3F6",
+    backgroundColor: "#F895C5",
     height: 90
   },
   signUpButton: {
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#F895C5",
+    backgroundColor: "#6BB3F6",
     height: 90
   },
   buttonText: {
