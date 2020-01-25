@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { Text, View, StyleSheet, Image, TouchableOpacity } from "react-native";
 import * as Font from "expo-font";
 import { AppLoading } from "expo";
-import LogInNavigator from "./navigation/LogInNavigator";
+
+import AppNavigator from "./navigation/AppNavigator";
 
 const fetchFonts = () => {
   Font.loadAsync({
-    "open-sans": require("./assets/fonts/Lato-Regular.ttf"),
-    "open-sans-bold": require("./assets/fonts/Lato-Bold.ttf")
+    lato: require("./assets/fonts/Lato-Regular.ttf"),
+    "lato-bold": require("./assets/fonts/Lato-Bold.ttf")
   });
 };
 
@@ -23,7 +24,7 @@ export default function App() {
     );
   }
 
-  return <LogInNavigator />;
+  return <AppNavigator />;
 }
 
 const styles = StyleSheet.create({});

@@ -7,6 +7,7 @@ const GenericButton = props => {
     <View style={{ ...styles.container, ...props.containerStyle }}>
       <TouchableOpacity
         style={{ ...styles.touchable, ...props.touchableStyle }}
+        onPress={props.onPress}
       >
         <View>
           <Text style={{ ...styles.title, ...props.titleStyle }}>
